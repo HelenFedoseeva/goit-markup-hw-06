@@ -464,6 +464,104 @@ body {
     
 }
 /*-------------------/MODAL-WINDOW-----------------------*/
+/*-----------------------------------FORM-MODAL--------------------------------------------------*/
+.form-modal {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-modal-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+
+    margin-bottom: 12px;
+}
+
+.form-modal-item {
+    display: inline-block;
+    
+    
+}
+
+.form-modal-item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.form-modal-prompt{
+    display: inline-block;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--contact-color);
+    margin-bottom: 4px;
+
+}
+
+.form-modal-input {
+    width: 100%;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    height: 40px;
+    width: 100%;
+}
+
+.form-modal-input:focus{
+    outline: none;
+    border-color: var(--focus-color);
+
+}
+
+.form-modal-comment{
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+}
+.form-modal-comment:focus{
+    outline: none;
+    border-color: var(--focus-color) ;
+}
+
+.form-modal-icon-wrapper{
+    position: relative;
+}
+
+.form-modal-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    width: 18px;
+    height: 18px;
+
+    transform: translate(-50%, -50%);
+}
+
+.person-black{
+    width: 12px;
+    height: 12px;
+}
+
+.phone-black{
+    width: 13px;
+    height: 13px;
+}
+
+.email-black{
+    width: 15px;
+    height: 12px;
+}
+/*----------------------------------/FORM-MODAL----------------------------------------------------*/
 
 .business-title{
     font-weight: 700;
