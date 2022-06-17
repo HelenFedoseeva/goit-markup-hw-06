@@ -373,6 +373,13 @@
                         </ul>
                     </section>
                 </div>
+                <form class="footer-form">
+                    <p class="footer-form-text">Подпишитесь на рассылку</p>
+                    <label for="" class="footer-form-label">
+                        <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-form-btn" type="submit">Подписаться</button>
+                </form>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -387,7 +394,7 @@
                     <label class="form-modal-item" for="">
                         <span class="form-modal-prompt">Имя</span>
                         <div class="form-modal-icon-wrapper">
-                            <input class="form-modal-input" type="text">
+                            <input class="form-modal-input" type="text" pattern="[a-zA-Z]*" name="username"  title="Elena" autofocus>
                             <svg class="form-modal-icon person-black">
                                 <use href="./images/portfolio/icon/icons.svg#icon-person-black-icon"></use>
                             </svg>
@@ -396,7 +403,7 @@
                     <label class="form-modal-item" for="">
                         <span class="form-modal-prompt">Телефон</span>
                         <div class="form-modal-icon-wrapper">
-                            <input class="form-modal-input" type="text">
+                            <input class="form-modal-input" type="tel" pattern="[+xxx]-[xxx]-[xx]-[xx]*" title="+xxx-xxx-xx-xx" name="phone-number" >
                             <svg class="form-modal-icon phone-black">
                                 <use href="./images/portfolio/icon/icons.svg#icon-phone-black-icon"></use>
                             </svg>
@@ -405,7 +412,7 @@
                     <label class="form-modal-item" for="">
                         <span class="form-modal-prompt">Почта</span>
                         <div class="form-modal-icon-wrapper">
-                            <input class="form-modal-input" type="text">
+                            <input class="form-modal-input" type="email" name="user-email">
                             <svg class="form-modal-icon email-black">
                                 <use href="./images/portfolio/icon/icons.svg#icon-email-black-icon"></use>
                             </svg>
@@ -413,13 +420,13 @@
                     </label>
                     <label class="form-modal-textarea" for="">
                         <span class="form-modal-prompt">Комментарий</span>
-                        <textarea class="form-modal-comment" type="text"></textarea>
+                        <textarea class="form-modal-comment" type="text" placeholder="Введите текст"></textarea>
                     </label>
-                    <label class="form-modal-item" for="">
-                        <input class="form-modal-input" type="checkbox">
-                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+                    <label class="form-modal-checkbox" for="checkbox">
+                        <input id="checkbox" class="form-input-checkbox" type="checkbox" name="comment" required>
+                        <span class="form-checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="form-checkbox-link" href="">Условия договора</a></span>
                     </label>
-                    <button type="submit">Отправить</button>
+                    <button class="form-modal-btn" type="submit">Отправить</button>
                 </form>
             </div>
         </div>

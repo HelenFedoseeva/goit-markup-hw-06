@@ -66,6 +66,7 @@ body {
     align-items: baseline;
 }
 
+
 .section{
     padding: 94px 0;
 }
@@ -519,6 +520,10 @@ body {
 
 }
 
+.form-modal-input:focus + .form-modal-icon{
+    fill: var(--focus-color);
+}
+
 .form-modal-comment{
     width: 100%;
     height: 120px;
@@ -526,6 +531,8 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+
+    padding: 12px 16px;
 }
 .form-modal-comment:focus{
     outline: none;
@@ -543,9 +550,12 @@ body {
 
     width: 18px;
     height: 18px;
+    fill: currentColor;
 
     transform: translate(-50%, -50%);
 }
+
+
 
 .person-black{
     width: 12px;
@@ -561,6 +571,86 @@ body {
     width: 15px;
     height: 12px;
 }
+
+.form-modal-textarea {
+    margin-bottom: 20px;
+}
+
+.form-modal-prompt {}
+
+.form-modal-comment::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+.form-modal-checkbox {
+    margin-bottom: 30px;
+}
+
+
+.form-checkbox-text{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+}
+.form-checkbox-text::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-color);
+    border-radius: 2px;
+    margin-right: 7px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input-checkbox:checked + .form-checkbox-text::before{
+    content: '';
+    background-color: var(--focus-color);
+    background-image: url(../images/portfolio/icon/icons.svg#icon-icon-check);
+    background-size: contain;
+    border: none;
+  
+}
+
+
+.form-checkbox-link{
+    color: var(--focus-color);
+}
+
+.form-modal-btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--focus-color);
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+        
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    margin: 0 auto;
+}
+
+.form-modal-btn:hover,
+.form-modal-btn:focus{
+    background-color: var(--model-button);
+    cursor: pointer;
+}
+
+
 /*----------------------------------/FORM-MODAL----------------------------------------------------*/
 
 .business-title{
@@ -903,3 +993,43 @@ body {
 
 
 
+.footer-form{
+    margin-left: auto;
+}
+
+.footer-form-text {}
+
+.footer-form-label {}
+
+.footer-form-input {}
+
+.footer-form-btn{
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    border: none;
+    background-color: var(--focus-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    color: #fff;
+
+   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+       
+    
+    /*display: flex;
+    align-items: center;
+    text-align: center;*/
+    letter-spacing: 0.06em;
+}
+
+.footer-form-btn::after {
+    content: '';
+    background-image: url(../images/portfolio/icon/icons.svg#icon-icon-send);
+    width: 24px;
+    height: 24px;
+}

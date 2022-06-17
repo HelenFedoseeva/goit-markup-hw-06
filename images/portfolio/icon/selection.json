@@ -1,0 +1,87 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M200.4 486.57l-7.043-6.719-105.819 100.237 372.826 355.664 783.274-747.217-105.124-100.284-678.147 646.318-259.967-247.999z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)",
+            "stroke": "rgb(255, 255, 255)",
+            "strokeLinejoin": "miter",
+            "strokeLinecap": "butt",
+            "strokeMiterlimit": "4",
+            "strokeWidth": 20.480000000000004
+          }
+        ],
+        "width": 1331,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 16,
+        "tags": [
+          "check"
+        ],
+        "colorPermutations": {
+          "1171171171175177184125525525513315024313333331": [
+            {
+              "f": 4,
+              "s": 4
+            }
+          ]
+        }
+      },
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)",
+          "stroke": "rgb(255, 255, 255)",
+          "strokeLinejoin": "miter",
+          "strokeLinecap": "butt",
+          "strokeMiterlimit": "4",
+          "strokeWidth": 20.480000000000004
+        }
+      ],
+      "properties": {
+        "order": 44,
+        "id": 508,
+        "name": "check",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}
