@@ -375,10 +375,16 @@
                 </div>
                 <form class="footer-form">
                     <p class="footer-form-text">Подпишитесь на рассылку</p>
-                    <label for="" class="footer-form-label">
-                        <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
-                    </label>
-                    <button class="footer-form-btn" type="submit">Подписаться</button>
+                    <div class="footer-form-container">
+                        <label for="" class="footer-form-label">
+                            <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
+                        </label>
+                        <button class="footer-form-btn" type="submit"><span class="footer-form-btn-text">Подписаться</span>
+                            <svg class="footer-icon-send" width="24" height="24">
+                                <use href="./images/portfolio/icon/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
             </div>
         </footer>
@@ -424,6 +430,7 @@
                     </label>
                     <label class="form-modal-checkbox" for="checkbox">
                         <input id="checkbox" class="form-input-checkbox" type="checkbox" name="comment" required>
+                        <span class="icon-check"></span>
                         <span class="form-checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="form-checkbox-link" href="">Условия договора</a></span>
                     </label>
                     <button class="form-modal-btn" type="submit">Отправить</button>
