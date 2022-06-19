@@ -644,7 +644,9 @@ body {
     background-color: var(--focus-color);
     background-image: url('../images/portfolio/icon/icon-check.svg');
     background-origin: border-box;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 13px 10px;
+    background-position: center;
 
 }
 
